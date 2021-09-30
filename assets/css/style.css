@@ -152,6 +152,8 @@ body
     border-radius: 28px;
     padding: 14px 0 14px 32px;
     outline: none;
+
+    line-height: 28px;
 }
 .btn
 {
@@ -174,8 +176,10 @@ body
 .btn__submit
 {
     top: 5px;
-    left: 260px; /*260px*/
+    left: 259px; /*260px*/
     bottom: unset;
+
+    line-height: 28px;
 }
 p
 {
@@ -191,6 +195,10 @@ img.brand
 .error__msg
 {
     margin-left: 32px;
+
+    /* Izmene */
+    font-size: 12px;
+    font-weight: bold;
 }
 .error--font
 {
@@ -205,6 +213,10 @@ img.brand
 @media screen and (max-width: 1440px)
 {
     /* .container.justify-content-center {justify-content: flex-end;}    */
+    .h1
+    {
+        line-height: 56px
+    }
     .img-container
     {
         width: 1275px;
@@ -289,6 +301,10 @@ img.brand
 }
 @media screen and (max-width: 592px)
 {
+    .logo--top-position
+    {
+        margin-left: 0;
+    }
     span.brand {display: none;}
     img.brand {display: block;}
     .main {min-height: 100vh;}
@@ -312,7 +328,7 @@ img.brand
         background-color: unset;
     }
     .h1, p { text-align: center; }
-    .h1 { font-size: 26px; }
+    .h1 { font-size: 26px; line-height: 38px; }
     .mt-1 { margin: 16px auto 0 auto; }
     p { font-size: 15px; }
     .dots
@@ -347,13 +363,15 @@ img.brand
     {
         top: unset;
         left: unset;
-        margin-top: 16px;
+        /* margin-top: 16px; */
     }
     .input-form, .btn
     {
-        width: 100%;
+        width: 97%;
+        margin: 16px auto 0 auto;
     }
-    .btn {padding: 12px 0;}
+    .content-container > p { line-height: 25px;}
+    .input-form {padding: 9px 0 9px 32px;}
     .btn__submit.position-absolute { position: unset; }
     .error__msg {margin-left: unset;}
 }
