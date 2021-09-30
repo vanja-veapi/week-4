@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root
+{
+    --green: #54E6AF;
+    --dark-gray: #2C344B;
+    --black: #121725;
+    --white: #ffffff;
+    --medium-gray: #5A668A;
+    --light-gray: #C2CBE5;
+}
+body
+{
+    font-family: 'Chivo', sans-serif;
+    font-size: 28px;
+    overflow-x: hidden;
+}
+.position-absolute{position: absolute;}
+.position-relative{position: relative;}
+.d-flex{display: flex;}
+.justify-content-end{justify-content: flex-end;}
+.justify-content-around{justify-content: space-around;}
+.align-items-center{align-items: center;}
+.align-items-end{align-items: flex-end;}
+.text--uppercase{text-transform: uppercase;}
+.text--white{color: var(--white);}
+.text--green{color: var(--green);}
+.text--red{color: #FB3E3E;}
+.text--light-gray{color: var(--light-gray)}
+.bg--color{background-color: var(--black);}
+.h1{font-size: 52px; font-weight: 400;}
+.invisible{visibility: hidden;}
+.font
+{
+    font-weight: bold;
+    font-family: 'Chivo', sans-serif;
+    font-size: 14px;
+}
+
+.mt-1
+{
+    margin-top: 24px;
+}
+.mt-2
+{
+    margin-top: 64px;
+}
+.mb
+{
+    margin-bottom: 40px;
+}
+.container
+{
+    width: 100%;
+}
+.main 
+{
+    min-height: 100vh;
+}
+.dots
+{
+    background-image: url(../desktop/bg-pattern-dots.svg);
+    width: 232px;
+    min-height: 104px;
+    z-index: 1;
+}
+.lg__dots
+{
+    /* position: absolute; */
+    right: -30px;
+    bottom: -49px;
+}
+.md__dots
+{
+    display: none;
+}
+.img-container
+{
+    width: 1900px;
+    min-height: 640px;
+    background-image: url(../desktop/image-host.jpg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: contain;
+    overflow-x: clip;
+    margin: unset;
+}
+.img.logo
+{
+    margin-left: 141px;
+}
+.content-container
+{
+    /* max-width: 723px; */
+    width: 723px;
+    padding-top: 88px;
+    padding-right: 58px;
+    z-index: 2;
+}
+.logo--top-position
+{
+    top: -30px;
+}
+.brands
+{
+    /* width: 536px; */
+    max-width: 536px;
+    height: 29px;
+    opacity: 0.55;
+}
+.brand
+{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* width: 100%; */
+}
+.brand.spotify
+{
+    background-image: url(../desktop/spotify.svg);
+    width: 96px;
+    height: 29px;
+}
+.brand.apple
+{
+    background-image: url(../desktop/apple-podcast.svg);
+    width: 78px;
+    height: 28px;
+}
+.brand.google
+{
+    background-image: url(../desktop/google-podcasts.svg);
+    width: 125px;
+    height: 16px;
+}
+.brand.pocket
+{
+    background-image: url(../desktop/pocket-casts.svg);
+    width: 129px;
+    height: 26px;
+}
+.input-form
+{
+    width: 427px;
+    background-color: var(--dark-gray);
+    color: var(--white);
+    border: none;
+    border-radius: 28px;
+    padding: 14px 0 14px 32px;
+    outline: none;
+}
+.btn
+{
+    border: none;
+    outline: none;
+    border-radius: 28px;
+    padding: 9px 27px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn-primary
+{
+    background-color: var(--green);
+    color: var(--black);
+}
+.btn-primary:hover
+{
+    background-color: #B3FFE2;
+}
+.btn__submit
+{
+    top: 5px;
+    left: 260px; /*260px*/
+    bottom: unset;
+}
+p
+{
+    font-size: 18px;
+    max-width: 445px;
+    font-weight: 400;
+    line-height: 28px;
+}
+img.brand
+{
+    display: none;
+}
+.error__msg
+{
+    margin-left: 32px;
+}
+.error--font
+{
+    font-size: 12px;
+    font-weight: bold;
+}
+/* and (max-height: 768px) */
+@media screen and (max-width: 2048px)
+{
+    .img-container { margin: 0 auto; }
+}
+@media screen and (max-width: 1440px)
+{
+    /* .container.justify-content-center {justify-content: flex-end;}    */
+    .img-container
+    {
+        width: 1275px;
+        background-size: unset;
+        margin: unset;
+    }
+    .img.logo
+    {
+        margin-left: 0;
+    }
+    .container
+    {
+        min-height: 100vh;
+    }
+}
+@media screen and (max-width: 1288px) 
+{
+    .img-container
+    {
+        max-width: 100%;
+        background-image: url(../tablet/image-host.jpg);
+        background-size: 500px;
+        /* background-position-y: -117px;  */
+        /* background-position-y: -87%;  */
+        background-position-y: 516%; 
+        height: 767px;
+    }
+    .img-container.align-items-end
+    {
+        align-items: center;
+    }
+    .main.align-items-center
+    {
+        align-items: unset;
+    }
+    .content-container
+    {
+        margin-top: 80px;
+        margin-left: 39px;
+    }
+    .logo--top-position
+    {
+        top: 0;
+        margin-left: 39px;
+        margin-top: 50px
+    }
+    .lg__dots
+    {
+        /* right: unset;
+        bottom: 0;
+        left: 0;
+        margin-left: 30px; */
+        display: none;
+    }
+    .md__dots
+    {
+        display: block;
+        right: unset;
+        bottom: 0;
+        left: 0;
+        margin-left: 30px
+    }
+}
+@media screen and (max-width: 768px) 
+{
+    .h1
+    {
+        font-size: 48px;   
+    }    
+    .content-container
+    {
+        width: 635px;
+        padding-right: 0;
+    }
+}
+@media screen and (max-height: 800px) and (min-height: 570px)
+{
+    .main
+    {
+        min-height: 130vh;
+    }
+}
+@media screen and (max-width: 592px)
+{
+    span.brand {display: none;}
+    img.brand {display: block;}
+    .main {min-height: 100vh;}
+    .brands
+    {
+        max-width: 317px;
+        margin: 30px auto 48px auto
+    }
+    .spotify.brand {width: 56px; height: 17px;}
+    .apple.brand {width: 45px; height: 17px;}
+    .google.brand {width: 73px; height: 11px;}
+    .pocket.brand {width: 77px; height: 15px;}
+    .content-container
+    {
+        /* margin-top: 0;
+        margin-left: 0; */
+        max-width: 90%;
+        margin: 0 auto;
+        margin-top: 86px;
+        padding-right: unset;
+        background-color: unset;
+    }
+    .h1, p { text-align: center; }
+    .h1 { font-size: 26px; }
+    .mt-1 { margin: 16px auto 0 auto; }
+    p { font-size: 15px; }
+    .dots
+    {
+        background-image: unset;
+        display: none;
+    }
+    .content-container.bg-color { background-color: unset; }
+    .img-container
+    {
+        background: linear-gradient(0deg, rgba(18,23,37, 0.9) 0%, rgba(18,23,37,0.9) 100%), url(../mobile/image-host.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .img.logo
+    {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        top: 0;
+        align-items: center;
+    }
+    .btn__submit
+    {
+        top: unset;
+        left: unset;
+        margin-top: 16px;
+    }
+    .input-form, .btn
+    {
+        width: 100%;
+    }
+    .btn {padding: 12px 0;}
+    .btn__submit.position-absolute { position: unset; }
+    .error__msg {margin-left: unset;}
+}
+/* overflow x clip sam dodao negde */
